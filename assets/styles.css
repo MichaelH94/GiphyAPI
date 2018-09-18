@@ -1,0 +1,21 @@
+/* Styles */
+
+.searchbtn {
+    margin: 5px;
+}
+
+#topicArea{
+    background-color: darkgray;
+}
+
+body {
+    background-color: gray;
+}
+
+#gifContainer {
+    padding: 10px; 
+    margin: 10px;
+    background-color: darkgray;
+    color: white;
+    text-shadow: 2px 2px black;
+}
