@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
     var search = {
-        topics: ["Mario", "Zelda", "Pokemon", "Kirby", "Metroid", "Castlevania", "Star fox", "Fire Emblem", "Final Fantasy", "Street Fighter", "Donkey Kong", "Super Smash Bros",
-    "Masahiro Sakurai", "Nintendo", "Nintendo Switch"],
+        topics: ["Super Mario Bros", "The Legend of Zelda", "Pokemon", "Kirby", "Metroid", "Castlevania", "Star Fox", "Fire Emblem", "Final Fantasy", "Street Fighter", "Donkey Kong", "Yoshi", "Pac Man",
+        "Mega Man", "Super Smash Bros", "Masahiro Sakurai", "Nintendo"],
        
     defaultButtons: function() {
             for(x = 0; x < search.topics.length; x++) {
@@ -43,10 +43,10 @@ $(document).ready(function() {
         var userQuery = $(this).data('search');
         var key = "&api_key=ommnVUQWOM61cr1zz1RSis1YJdQyVBkk";
         var limit = "&limit=10"
-        var reqUrl = "https://api.giphy.com/v1/gifs/search?q=" + userQuery + limit + key;
+        var requestUrl = "https://api.giphy.com/v1/gifs/search?q=" + userQuery + limit + key;
 
             $.ajax({
-                url: reqUrl,
+                url: requestUrl,
                 method: "GET"
             }).done(function(response) {
                 for(x = 0; x < response.data.length; x++) {
